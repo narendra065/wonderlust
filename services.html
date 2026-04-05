@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANDERLUST | Explore the World</title>
+    <style>
+        :root {
+            --primary: #1a4d3a;
+            --gold: #bca07c;
+            --text: #333;
+            --light: #fdfaf5;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            color: var(--text);
+            background-color: var(--light);
+            line-height: 1.8;
+        }
+
+        /* Header & Nav */
+        header {
+            background: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--gold);
+        }
+
+        /* General Layout */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--primary);
+            font-family: 'Palatino', serif;
+        }
+
+        .btn {
+            background: var(--primary);
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: var(--gold);
+        }
+
+        /* Mobile Adjustment */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><img src="logo.png" alt="WANDERLUST Logo"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 style="text-align: center;">Bespoke Travel Planning</h1>
+        <p style="text-align: center; color: #555; margin-bottom: 50px;">We leverage our global network to create
+            unique, structured journeys.</p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Cultural Immersion</h3>
+                <p>Focus on local workshops, private museum tours, and culinary experiences.</p>
+            </div>
+            <div class="card">
+                <h3>Architectural Wonders</h3>
+                <p>Journeys dedicated to exploring the world’s iconic structures, from London to Bali.</p>
+            </div>
+            <div class="card">
+                <h3>Sustainable Travel</h3>
+                <p>Itineraries that emphasize eco-friendly lodging and low-impact exploration.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background: var(--primary); color: #fff; text-align: center; padding: 30px; margin-top: 50px;">
+        <p>&copy; 2026 WANDERLUST Chronicles. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
